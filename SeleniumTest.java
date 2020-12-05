@@ -13,12 +13,13 @@ public class SeleniumTest
 
  System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
  ChromeOptions chromeOptions = new ChromeOptions();
+ chromeOptions.addArguments("--headless");
  WebDriver driver = new ChromeDriver(chromeOptions);
 
  System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
 
 
- driver.get("http://localhost:8090/about");
+ driver.get("http://localhost:8090/addressbook");
 
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
  driver.findElement(By.className("v-button")).click();
