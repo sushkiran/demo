@@ -1,5 +1,5 @@
 From devopsedu/webapp
 Maintainer Sushvin
-ADD https://github.com/edureka-devops/projCert/blob/master/website/content/about-us.php /usr/local/test/about-us
+ADD About.php /usr/local/test/about
 CMD ["/bin/bash"]
 EXPOSE 8080
